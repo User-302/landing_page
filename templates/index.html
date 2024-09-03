@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<a  href="https://icons8.com/icon/11076/rock-music">Rock Music</a> icon by <a href="https://icons8.com">Icons8</a>
+		<a  href="https://icons8.com/icon/11076/rock-music"></a>
 	</head>
 	<body class="is-preload">
 
@@ -28,6 +28,7 @@
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Things I Do</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
+						<li><a href="#five">Projects</a></li>
 						<li><a href="#four">Contact</a></li>
 					</ul>
 				</nav>
@@ -35,10 +36,10 @@
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">LinkedIn</span></a></li> -->
 						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="fa-brands fa-linkedin-in"><span class="label"></span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/faiq.kashhhhh/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/faiq-kashif-8b78a0249/" class="fa-brands fa-linkedin-in" target="_blank"><span class="label"></span></a></li>
+						<li><a href="https://github.com/User-302" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/@intothewild.7182" class="icon brands fa-youtube"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -76,7 +77,7 @@
 										<!-- <li class="icon solid fa-coffee">Drink much coffee</li> -->
 										<!-- <li class="icon solid fa-bolt">Lightning bolt</li> -->
 										<!-- <li class="icon solid fa-users">Shadow clone technique</li> -->
-										<li class='icon solid fa-chess-queen'>Play Chess</li>
+										<li class='icon solid fa-chess-queen'>Chess</li>
 										<li class='icon solid fa-table-tennis'>Play Sports</li>
 										<li class="icon solid fa-dumbbell">Workout</li>
 										<li class='icon solid fa-hiking'>Explore</li>
@@ -127,18 +128,41 @@
 									</div>
 								</div>
 							</section>
-
+<!-- _____________________nProjects________________________________ -->
+							<section id="five">
+								<div class="container">
+									<h3>Projects</h3>
+									<p>These are a few of my <strong>Projects</strong>.</p>
+									<div class="items style1 medium onscroll-fade-in">
+										<section><div class="inner">
+											<span class="icon style2 major fa-gem"></span>
+											<h3><span class="demo-controls"><span class="property" data-name="style"><a href="https://github.com/User-302/Machine-Learning" target="_blank" class="title tooltip">Machine Learning</a></span></h3>
+											<p>Developed a machine learning model using logistic regression to distinguish between fake and real news.</p>
+										</div></section>
+										<section><div class="inner">
+											<span class="icon solid style2 major fa-save"></span>
+											<h3><span class="demo-controls"><span class="property" data-name="style"><a href="https://github.com/User-302/Inventory-Management" target="_blank" class="title tooltip">Inventory Management</a></span></h3>
+											<p>Developed an Inventory Management App using firebase.</p>
+										</div></section>
+										<section><div class="inner">
+											<span class="icon solid style2 major fa-chart-bar"></span>
+											<h3><span class="demo-controls"><span class="property" data-name="style"><a href="https://github.com/User-302/chatbot" target="_blank" class="title tooltip">Chatbot</a></span></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+										</div></section>
+									</div>
+								</div>
+							</section>
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p></p>
-									<form method="post" action="#">
+									<form id="contactForm" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSen_qJYR4LmOmnN_SBGDg1U2kyWUksyJGZTbYA_ruKBBqP7OQ/formResponse">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="entry.1650048654" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="entry.125764543" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="entry.1467175134" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="entry.419272266" id="message" placeholder="Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
 													
@@ -150,9 +174,42 @@
 									</form>
 								</div>
 							</section>
+							
+<!-- _______________________________logic for sending message to google form______________________________ -->
+							<script>
+								document.getElementById('contactForm').addEventListener('submit', function(event) {
+									event.preventDefault();
+									
+									const formData = new FormData(this);
+									const data = new URLSearchParams();
+									
+									for (const [key, value] of formData.entries()) {
+										data.append(key, value);
+									}
+
+									fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSen_qJYR4LmOmnN_SBGDg1U2kyWUksyJGZTbYA_ruKBBqP7OQ/formResponse', {
+										method: 'POST',
+										body: data,
+										headers: {
+											'Content-Type': 'application/x-www-form-urlencoded'
+										}
+									})
+									.then(response => {
+										if (response.ok) {
+											alert('Message sent successfully!');
+											document.getElementById('contactForm').reset();
+										} else {
+											alert('Error sending message.');
+										}
+									})
+									.catch(error => {
+										alert('Error sending message.');
+									});
+								});
+							</script>
 
 						<!-- Five -->
-						<!--
+						<!-- 
 							<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
@@ -482,12 +539,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</section>
 						
 
-					</div>
+					</div> -->
 
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
+								<li>My <a href="{{ url_for('static', filename='resume1.doc') }}" download>Resume</a></li>
 								<!-- <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 							</ul>
 						</div>
